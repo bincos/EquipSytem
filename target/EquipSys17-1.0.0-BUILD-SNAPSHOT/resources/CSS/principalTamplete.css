@@ -1,0 +1,258 @@
+@CHARSET "ISO-8859-1";
+
+@import url('reset.css');
+
+div {
+	border: 1px dotted gray;  /*-- dotted cad avec la couleur--*/
+ 	/*padding:  10px;  espace entre bordure et une texte */
+ 	margin: 1px; /*marge entre 2 diov*/ 	
+ 
+}
+
+
+	.TFtable {
+		width:100%; 
+		border-collapse:collapse; 
+	}
+	.TFtable td{ 
+		padding:7px; border:#4e95f4 1px solid;
+	}
+	/* provide some minimal visual accomodation for IE8 and below */
+	.TFtable tr{
+		background: #b8d1f3;
+	}
+	/*  Define the background color for all the ODD background rows  */
+	.TFtable tr:nth-child(odd){ 
+		background: #b8d1f3;
+	}
+	/*  Define the background color for all the EVEN background rows  */
+	.TFtable tr:nth-child(even){
+		background: #dae5f4;
+	}
+
+
+.table1 {
+	width: 790px;
+	
+	
+
+ }
+.table1 th{
+	border: 1px dotted gray; 
+ 	padding:  10px; 
+ 	background:pink;
+ 	
+ }
+ .table1 td{
+	border: 1px dotted gray; 
+ 	padding:  10px; 
+ 	background:green;
+ 	
+ } 
+ 
+
+ .table1 tr:nth-child(odd)		{ background-color:#eee; }
+.table1 tr:nth-child(even)		{ background-color:#fff; }
+span.current{ /*chaque span ayant la class current */
+	border: 1px solid gray; 
+ 	padding:  5px; 
+ 	margin:  5px;
+ 	background:green;
+ 	
+ }
+ span.autrePage{ /*chaque span ayant la class current */
+	border: 1px solid gray; 
+ 	padding:  5px; 
+ 	margin:  5px;
+ 	background:green;
+ 	
+ }
+ 
+ .error{
+  color: red;
+ }
+ 
+ 
+ 
+ .errorblock {  
+ color: #ff0000;  
+ background-color: #ffEEEE;  
+ border: 3px solid #ff0000;  
+ text-decoration:blink;
+ padding: 8px;  
+ margin: 16px;  
+}  
+ 
+ 
+ 
+ .infoClient
+ {
+  background-color: silver;
+ }
+ .infoH {
+  background-color: silver;
+ }
+ 
+ 
+  /* sFrom My layout
+ */
+ #body44 {
+	background-color: #f0f0f0;
+
+}
+
+ #container {
+    width: 1000px;
+      margin: 0 auto;
+      height: auto;
+      
+}
+
+#primary {
+    float: left;
+    width: 100px;
+    height: 600px
+    
+}
+
+#content {
+    float: left;
+    width: 820px;
+     height: 600px
+  
+}
+
+#secondary {
+    float: right;
+    width: 60px;
+     height: 600px
+   
+}
+
+#footer {
+    clear: both;
+    
+}
+  
+ /*
+ debut pour le grand MENUS
+ */
+
+
+body {
+	background-color: #f0f0f0;
+	font-family: helvetica, "Times New Roman", Times, serif;
+}
+a:focus {
+	outline: none;
+	
+}
+.clear {
+	clear: both;
+	background-color: buttonface;
+}
+#page-wrap {
+	position: relative;
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 1px;
+}
+ul#main-nav {
+	margin-left: 20px;
+}
+ul#main-nav li {
+	float: left;
+	position: relative;
+	margin-left: -20px;
+	display: inline;
+}
+ul#main-nav li a {
+	position: relative;
+	width: 110px;
+	height: 29px;
+	display: block;
+	background-image: url('../image/tabs.png');
+	background-position: center center;
+	color: #44403b;
+	text-decoration: none;
+	font-size: 14px;
+	padding-top: 12px;
+	text-align: left;
+	padding-left: 30px;
+	font-weight: bold;
+}
+ul#main-nav li.home a {
+	background-image: url('../image/tab-home.png');
+}
+ul#main-nav li.current a {
+	background-position: top;
+	color: #ffffff;
+}
+ul#main-nav li a:hover {
+	background-position: bottom;
+	color: #ffffff;
+}
+ul#main-nav li.current a:hover {
+	background-position: top; /*To Prevent the Current tab from changing colour on hover*/
+	color: #ffffff;
+}
+ul#main-nav li.current {
+	z-index: 100;
+}
+
+ul#main-nav li.home {
+	z-index: 100;
+}
+
+ul#main-nav li.portfolio {
+	z-index: 99;
+}
+ul#main-nav li.services {
+	z-index: 98;
+}
+ul#main-nav li.about {
+	z-index: 97;
+}
+ul#main-nav li.contact {
+	z-index: 96;
+}
+#image {
+	position: relative;
+	float: left;
+	margin-left: 40px;
+	margin-top: 25px;
+}
+#featured {
+	position: relative;
+	background-color: #577295;
+	background-image: url('../image/featured-border.jpg');
+	background-repeat: repeat-y;
+	background-position: left;
+	
+	/*height: 400px;
+	*/
+	height: 400px;
+	color: #ffffff;
+}
+#featured h1 {
+	font-size: 24px;
+	position: relative;
+	margin-bottom: 17px;
+}
+#featured p {
+	line-height: 18px;
+	font-size: 12px;
+}
+#featured-content{
+	float: left;
+	position: relative;
+	width: 650px;
+	margin-top: 10px;
+	margin-right: 10px;
+	display: inline;
+}
+
+/*Fin gran MENUS
+*/
+/* DEBU MENUS VERTICAL */
