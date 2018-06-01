@@ -134,17 +134,18 @@ public class SimpleUserController {
 		List<Planification> planifications = null;
 
 		List<SimpleUser> listUser = mettier.getSimpleUserByMail(name);
+		System.out.println("....SIZE......." + listUser.size() +"<-NAME->"+name);
 		if (listUser != null) {
 			SimpleUser userSimple = listUser.get(0);
 			System.out.println("..........." + name);
 			 model.addAttribute("profileInSession", userSimple);
-			 
+				model.addAttribute("editForm", new SearchForm());
 			 try {
 				 planifications = mettier.listPlanBuyUser(userSimple.getId());
 					size = planifications.size();
 					model.addAttribute("size", size);
 					model.addAttribute("planList", planifications);
-					model.addAttribute("editForm", new SearchForm());
+				
 			} catch (Exception e) {
 				model.addAttribute("error", e.getMessage());
 			}
